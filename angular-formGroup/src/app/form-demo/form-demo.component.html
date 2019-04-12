@@ -45,8 +45,12 @@
          class="alert alert-danger">Input are required
    </div>
 
-
+<div *ngIf="myForm.valid">
+<fieldset>
    <button type="submit" class="btn btn-primary">Submit</button>
+</fieldset>
+</div>
+
  </form>
   
  <div *ngIf="!myForm.valid"
