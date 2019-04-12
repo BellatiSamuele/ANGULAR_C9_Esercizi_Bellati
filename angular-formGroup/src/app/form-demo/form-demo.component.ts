@@ -15,14 +15,17 @@ export class FormDemoComponent implements OnInit {
  myForm: FormGroup;
  constructor(fb: FormBuilder) {
    this.myForm = fb.group({
-     'sku': ['ABC123', Validators.required]
+     'sku': ['ABC123', Validators.required],
+     'price': ['123', Validators.required],
+     'url': ['https://', Validators.required]
    });
  }
  ngOnInit() {
  }
 
  onSubmit(value: string): void {
-   console.log('valore inserito: ', value);
+   console.log('valori inseriti: ', value);
  }
+
 }
 
