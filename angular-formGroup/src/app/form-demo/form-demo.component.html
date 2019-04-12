@@ -28,12 +28,20 @@
            name="url"
            [formControl]="myForm.controls['url']"
            class="form-control">
+
+     <label for="nomeInput">Dammi il tuo nome</label>
+     <input type="text"
+           id="nomeInput"
+           placeholder="nome"
+           name="nome"
+           [formControl]="myForm.controls['nome']"
+           class="form-control">
    </div>
 
-   <div *ngIf="!myForm.controls['sku'].valid || !myForm.controls['price'].valid || !myForm.controls['url'].valid || !myForm.controls['mail'].valid"
+   <div *ngIf="!myForm.controls['sku'].valid || !myForm.controls['price'].valid || !myForm.controls['url'].valid || !myForm.controls['nome'].valid"
          class="alert alert-danger">Input is invalid
    </div>
-   <div *ngIf="myForm.controls['sku'].hasError('required') || myForm.controls['price'].hasError('required') || myForm.controls['url'].hasError('required') || myForm.controls['mail'].hasError('required')"
+   <div *ngIf="myForm.controls['sku'].hasError('required') || myForm.controls['price'].hasError('required') || myForm.controls['url'].hasError('required') || myForm.controls['nome'].hasError('required')"
          class="alert alert-danger">Input are required
    </div>
 
