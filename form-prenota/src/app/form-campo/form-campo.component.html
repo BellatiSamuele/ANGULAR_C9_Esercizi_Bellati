@@ -1,0 +1,65 @@
+<div class="container">
+ <h2>Prenotàti anche tu:</h2>
+ <form [formGroup]="myForm"
+       (ngSubmit)="onSubmit(myForm.value)"
+       class="jumbotron">
+
+   <div class="form-group">
+     <label for="nome">Nome</label>
+     <input type="text"
+           id="nome"
+           placeholder="Il tuo vero nomeeee"
+           name="nome"
+           [formControl]="myForm.controls['nome']"
+           class="form-control">
+
+     <label for="cognome">Cognome</label>
+     <input type="text"
+           id="cognome"
+           placeholder="Dimmi il cognome"
+           name="cognome"
+           [formControl]="myForm.controls['cognome']"
+           class="form-control">
+
+     <label for="indirizzo">Indirizzo</label>
+     <input type="text"
+           id="indirizzo"
+           placeholder="Autotracciati, ma tanto ho già il tuo ip"
+           name="indirizzo"
+           [formControl]="myForm.controls['indirizzo']"
+           class="form-control">
+
+     <label for="tel">Telefono</label>
+     <input type="number"
+           id="tel"
+           placeholder="tell o cell"
+           name="tel"
+           [formControl]="myForm.controls['tel']"
+           class="form-control">
+
+     <label for="email">Email</label>
+     <input type="email"
+           id="email"
+           placeholder="liame"
+           name="email"
+           [formControl]="myForm.controls['email']"
+           class="form-control">
+           
+     <label for="data">Data</label>
+     <input type="text"
+           id="data"
+           placeholder="gg/mm/aa"
+           name="data"
+           [formControl]="myForm.controls['data']"
+           class="form-control">
+           
+     <label for="ora">Ora</label>
+     <input type="number"
+           id="ora"
+           placeholder="allora"
+           name="ora"
+           [formControl]="myForm.controls['ora']"
+           class="form-control">
+   </div>
+  </form>
+</div>
