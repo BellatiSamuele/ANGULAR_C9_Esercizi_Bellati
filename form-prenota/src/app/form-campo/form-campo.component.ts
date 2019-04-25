@@ -29,6 +29,7 @@ export class FormCampoComponent implements OnInit {
 
  onSubmit(value: string): void {
    console.log('valori inseriti: ', value);
+
  }
 
 }

@@ -1,18 +1,20 @@
-<div *ngIf="hero">
+<h2>Lista prenotazioni</h2>
+<div>
 
-  <h2>Caratteristiche</h2>
-  <div><span>id: </span>{{hero.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="hero.name" placeholder="name"/>
+    <label>nome:
+    <input [(ngModel)]="prenotazioni.nome"/>
     </label><br>
 
-        <label>livello:
-      <input [(ngModel)]="hero.superLivello" placeholder="livello"/>
+    <label>cognome:
+    <input [(ngModel)]="prenotazioni.cognome"/>
     </label><br>
 
-        <label>potere:
-      <input [(ngModel)]="hero.superPotere" placeholder="potere"/>
-    </label>
-  </div>
+    <label>data:
+    <input [(ngModel)]="prenotazioni.data"/>
+    </label><br>
+
+    <label>ora:
+    <input [(ngModel)]="prenotazioni.ora"/>
+    </label><br>
 </div>
+
