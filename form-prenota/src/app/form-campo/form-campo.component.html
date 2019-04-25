@@ -46,7 +46,7 @@
            class="form-control">
            
      <label for="data">Data</label>
-     <input type="text"
+     <input type="date"
            id="data"
            placeholder="gg/mm/aa"
            name="data"
@@ -61,5 +61,22 @@
            [formControl]="myForm.controls['ora']"
            class="form-control">
    </div>
-  </form>
+
+   <div *ngIf="!myForm.controls['nome'].valid"
+         class="alert alert-danger">Input is invalid
+   </div>
+   <div *ngIf="myForm.controls['nome'].hasError('required')"
+         class="alert alert-danger">Input are required
+   </div>
+
+<div *ngIf="myForm.valid">
+<fieldset>
+   <button type="submit" class="btn btn-primary">Submit</button>
+</fieldset>
+</div>
+
+ </form>
+  
+ <div *ngIf="!myForm.valid"
+ class="alert alert-danger">Form is invalid</div>
 </div>

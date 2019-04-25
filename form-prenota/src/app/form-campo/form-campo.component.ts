@@ -15,13 +15,13 @@ export class FormCampoComponent implements OnInit {
  myForm: FormGroup;
  constructor(fb: FormBuilder) {
    this.myForm = fb.group({
-     'nome': ['ABC123', Validators.required],
-     'cognome': ['ABC123', Validators.required],
-     'indirizzo': ['ABC123', Validators.required],
-     'tel': ['ABC123', Validators.required],
-     'email': ['ABC123', Validators.required],
-     'data': ['ABC123', Validators.required],
-     'ora': ['ABC123', Validators.required]
+     'nome': ['a', Validators.required],
+     'cognome': ['b', Validators.required],
+     'indirizzo': ['c', Validators.required],
+     'tel': ['1', Validators.required],
+     'email': ['d', Validators.required],
+     'data': ['2/3/4', Validators.required],
+     'ora': ['5', Validators.required]
    });
  }
  ngOnInit() {
