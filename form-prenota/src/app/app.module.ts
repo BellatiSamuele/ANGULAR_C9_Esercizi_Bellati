@@ -8,11 +8,13 @@ import {   //Importare le funzionalità nella nostra applicazione
  FormsModule,
  ReactiveFormsModule
 } from '@angular/forms';
+import { PrenotaViewComponent } from './prenota-view/prenota-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormCampoComponent
+    FormCampoComponent,
+    PrenotaViewComponent
   ],
   imports: [
     BrowserModule,
