@@ -1,14 +1,14 @@
 <h2 class="display-4">Operazione sul numero</h2>
 <form class="form-group">
 
-  <input type="number" name="numero1" class=" col-sm-2 form-control" #tot><br>
-  <input type="number" name="numero2" class=" col-sm-2 form-control" #tot><br>
-  <button (click)="somma(tot)" class="btn btn-primary">+</button>
-  <button (click)="sottrazione(tot)" class="btn btn-primary">-</button>
-  <button (click)="moltiplicaz(tot)" class="btn btn-primary">-</button>
-  <button (click)="divisione(tot)" class="btn btn-primary">-</button>
+  <input type="number" name="numero1" class=" col-sm-2 form-control" #num1><br>
+  <input type="number" name="numero2" class=" col-sm-2 form-control" #num2><br>
+  <button (click)="somma(1, 2)" class="btn btn-primary">+</button>
+  <button (click)="sottrazione(1, 2)" class="btn btn-primary">-</button>
+  <button (click)="moltiplicaz(1, 2)" class="btn btn-primary">*</button>
+  <button (click)="divisione(1, 2)" class="btn btn-primary">/</button>
 
 </form>
 
-<app-ris [numero]="numero" [i]="i"> </app-ris>
+<app-ris [tota]="tot" ></app-ris>
 

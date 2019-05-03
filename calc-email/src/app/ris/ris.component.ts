@@ -9,8 +9,7 @@ export class RisComponent implements OnInit {
 
   constructor() { }
 
-  @Input() numero: number;
-  @Input() i: number;
+  @Input() tota: number;
 
   ngOnInit() {
   }

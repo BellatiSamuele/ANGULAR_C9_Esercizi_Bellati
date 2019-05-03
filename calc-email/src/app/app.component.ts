@@ -9,39 +9,36 @@ export class AppComponent {
   title = 'calc-email';
 
   tot: number = 0;
-  numero: number = 0;
-  i: number = 0;
 
-
-  somma(tot: HTMLInputElement){
-    let totInt = Number(tot.value);
-    this.numero = this.numero + totInt;
-    this.i++;
-    console.log(this.numero);
+  somma(num1: HTMLInputElement, num2: HTMLInputElement){
+    let numero1 = Number(num1.value);
+    let numero2 = Number(num2.value);
+    this.tot = numero1 + numero2;
+    console.log(this.tot);
     return false;
   }
 
-  sottrazione(tot: HTMLInputElement){
-    let totInt = Number(tot.value);
-    this.numero = this.numero - totInt;
-    this.i++;
-    console.log(this.numero);
+  sottrazione(num1: HTMLInputElement, num2: HTMLInputElement){
+    let numero1 = Number(num1.value);
+    let numero2 = Number(num2.value);
+    this.tot = numero1 - numero2;
+    console.log(this.tot);
     return false;
   }
 
-  moltiplicaz(tot: HTMLInputElement){
-    let totInt = Number(tot.value);
-    this.numero = this.numero * totInt;
-    this.i++;
-    console.log(this.numero);
+  moltiplicaz(num1: HTMLInputElement, num2: HTMLInputElement){
+    let numero1 = Number(num1.value);
+    let numero2 = Number(num2.value);
+    this.tot = numero1 * numero2;
+    console.log(this.tot);
     return false;
   }
 
-  divisione(tot: HTMLInputElement){
-    let totInt = Number(tot.value);
-    this.numero = this.numero / totInt;
-    this.i++;
-    console.log(this.numero);
+  divisione(num1: HTMLInputElement, num2: HTMLInputElement){
+    let numero1 = Number(num1.value);
+    let numero2 = Number(num2.value);
+    this.tot = numero1 / numero2;
+    console.log(this.tot);
     return false;
   }
 
