@@ -14,4 +14,8 @@ export class RisComponent implements OnInit {
   ngOnInit() {
   }
 
+  email(mail:HTMLInputElement){
+    console.log("il risultato è: ", this.tota);
+  }
+
 }
