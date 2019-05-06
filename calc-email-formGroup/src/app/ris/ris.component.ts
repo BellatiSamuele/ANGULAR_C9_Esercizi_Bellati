@@ -8,7 +8,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 })
 export class RisComponent implements OnInit {
 
-  @Input() n : number;
+  @Input()n : number;
    
   myForm: FormGroup;
    

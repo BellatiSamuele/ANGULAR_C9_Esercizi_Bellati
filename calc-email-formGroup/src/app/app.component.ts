@@ -13,8 +13,10 @@ export class AppComponent {
 
   myForm: FormGroup;
   numeri: Numeri;
+  a: Numeri;
+  b: Numeri;
 
-  constructor(fb:FormBuilder){
+  constructor (fb:FormBuilder){
     this.myForm = fb.group({
       'a': ['0', Validators.required],
       'b': ['0', Validators.required]
