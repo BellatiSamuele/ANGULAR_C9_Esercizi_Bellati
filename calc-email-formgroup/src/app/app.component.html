@@ -1,0 +1,13 @@
+<form [formGroup] = "myForm">
+
+  <div class="form-group">
+    <input type="number" class="form-control w-25" id="a" name="a" onfocus="this.value=''" [formControl]="myForm.controls['a']">
+    <input type="number" class="form-control w-25" id="b" name="b" onfocus="this.value=''" [formControl]="myForm.controls['b']">
+  </div>
+  <button type="button" class="btn btn-small btn-warning m-2 btn-outline-dark" (click)="sum()">+</button>
+  <button type="button" class="btn btn-small btn-warning m-2 btn-outline-dark" (click)="sott()">-</button>
+  <button type="button" class="btn btn-small btn-warning m-2 btn-outline-dark" (click)="molt()">*</button>
+  <button type="button" class="btn btn-small btn-warning m-2 btn-outline-dark" (click)="divis()">/</button>
+</form>
+
+<app-ris [risultato]="risultato"> </app-ris>
