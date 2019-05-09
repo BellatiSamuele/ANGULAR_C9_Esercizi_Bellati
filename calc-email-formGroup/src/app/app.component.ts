@@ -13,10 +13,8 @@ export class AppComponent {
 
   myForm: FormGroup;
   numeri: Numeri;
-  a: Numeri;
-  b: Numeri;
 
-  constructor (fb:FormBuilder){
+  constructor (fb: FormBuilder){
     this.myForm = fb.group({
       'a': ['0', Validators.required],
       'b': ['0', Validators.required]
@@ -31,8 +29,6 @@ export class AppComponent {
     else
     {
       this.numeri = new Numeri();
-      this.numeri.a = this.myForm.controls['a'];
-      this.numeri.b = this.myForm.controls['b'];
       this.numeri.ris = this.numeri.a + this.numeri.b;
     }
   }

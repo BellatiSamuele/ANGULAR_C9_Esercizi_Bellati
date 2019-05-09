@@ -1,5 +1,5 @@
 export class Numeri{
-  a: number;
-  b: number;
-  ris: number;
+  a: number=0;
+  b: number=0;
+  ris: number=0;
 }

@@ -1,8 +1,11 @@
-<form [FormGroup] = 'myForm'>
-  <input [FormControl] = myForm.controls['a']>
-  <input [FormControl] = myForm.controls['b']>
-  
-  <button(click) = 'onSum()'>+ 
+<form [formGroup] = "myForm" class="jumbotron">
+  <div class = "form-group">
+    <label for= "aInput">SKU</label>
+    <input type= "number" [formControl] = "myForm.controls['a']" class="form-control">
+    <input type= "number" [formControl] = "myForm.controls['b']" class="form-control">
+  </div>
+  <button(click) = "onSum()" class="btn btn-primary">+ 
 </form>
+<app-ris *ngIf = "Numeri"></app-ris>
 
-<app-ris *ngIf = 'Numeri'>
+
