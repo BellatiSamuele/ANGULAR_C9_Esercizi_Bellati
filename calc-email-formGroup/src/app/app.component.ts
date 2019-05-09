@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Numeri } from './numeri.model';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +10,10 @@ import { Numeri } from './numeri.model';
 export class AppComponent {
   title = 'calc-email-formGroup';
 
-  myForm: FormGroup;
-  numeri: Numeri;
+   myForm: FormGroup;
+   ris: number;
+   a: number;
+   b: number;
 
   constructor (fb: FormBuilder){
     this.myForm = fb.group({
@@ -28,8 +29,9 @@ export class AppComponent {
     }
     else
     {
-      this.numeri = new Numeri();
-      this.numeri.ris = this.numeri.a + this.numeri.b;
+      this.a = Number(this.myForm.controls['a'].value);
+      this.b = Number(this.myForm.controls['b'].value);
+      this.ris = Number(this.myForm.controls['a'].value) + Number(this.myForm.controls['a'].value);
     }
   }
 }
